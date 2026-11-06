@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>DiceFlick: 3D Dice Roller</title>
+<meta name="description" content="DiceFlick is a 3D dice roller for iPhone and iPad. Roll d4 to d20, up to six dice at once, with a tap or a shake. No ads, no accounts, no tracking.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #2a6886;
+    --card: #f3f6f8;
+    --rule: #d6dde2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0d0f;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --accent: #8fd0ea;
+      --card: #181c20;
+      --rule: #2e3439;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
+  .hero { text-align: center; margin-bottom: 40px; }
+  .hero img {
+    width: 128px; height: 128px;
+    border-radius: 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  }
+  h1 { font-size: 2.2rem; line-height: 1.2; margin: 20px 0 6px; }
+  .tagline { color: var(--muted); font-size: 1.15rem; margin: 0 auto; max-width: 32em; }
+  h2 { font-size: 1.3rem; margin: 40px 0 12px; }
+  h3 { font-size: 1.05rem; margin: 0 0 4px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .features li { margin-bottom: 8px; }
+  .faq { display: grid; gap: 12px; }
+  .faq div {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+  .faq p { margin: 0; }
+  .contact {
+    background: var(--card);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 48px; padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 0.9rem;
+    display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="icon.png" alt="DiceFlick app icon" width="128" height="128">
+    <h1>DiceFlick</h1>
+    <p class="tagline">A 3D dice roller for iPhone and iPad. Roll anything from a d4 to a d20 with a tap or a shake.</p>
+  </header>
+
+  <p>DiceFlick rolls realistic 3D dice for board games, tabletop role-playing games, classrooms and anything else that needs a fair roll. Pick a die, choose how many to roll, and tap. The dice tumble, land and show the total, and the background color shifts with how high you rolled.</p>
+
+  <h2>Features</h2>
+  <ul class="features">
+    <li>3D dice: d4, d6, d8, d10, d12 and d20</li>
+    <li>Roll 1 to 6 dice at once, with the total shown</li>
+    <li>Tap anywhere or shake your device to roll</li>
+    <li>A background color that reflects how high the roll was</li>
+    <li>Roll history of your last 100 rolls, kept only on your device</li>
+    <li>Sound, Haptics, Shake to Roll and Keep History settings</li>
+    <li>VoiceOver announcements, Dynamic Type and Reduce Motion support</li>
+    <li>No ads, no accounts, no tracking, and it works fully offline</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <div>
+      <h3>How do I roll?</h3>
+      <p>Tap anywhere on the screen. You can also shake your iPhone or iPad, unless Shake to Roll is turned off in Settings.</p>
+    </div>
+    <div>
+      <h3>How do I change dice?</h3>
+      <p>Tap the dice button in the bottom-left corner (it shows what you're rolling, such as <strong>2d6</strong>) and pick the type of die (d4, d6, d8, d10, d12 or d20) and how many to roll, from 1 to 6. You can also change both in Settings. Every die in a roll is the same type, and the total is shown after they land.</p>
+    </div>
+    <div>
+      <h3>How do I clear my roll history?</h3>
+      <p>Open History (the clock button), tap <strong>Clear</strong> and confirm. To stop saving rolls at all, turn off <strong>Keep History</strong> in Settings (the gear button). Deleting the app also deletes its history and settings.</p>
+    </div>
+    <div>
+      <h3>Does DiceFlick collect any data?</h3>
+      <p>No. DiceFlick has no accounts, ads, analytics or tracking, and it never connects to the internet. Your roll history and settings are stored only on your device and are never sent anywhere. See the <a href="privacy.html">privacy policy</a> for details.</p>
+    </div>
+  </div>
+
+  <h2>Support</h2>
+  <div class="contact">
+    <p>Found a bug or have a question? Email <strong><a href="mailto:ayush.pathak021@outlook.com">ayush.pathak021@outlook.com</a></strong> and include your device model and iOS version if you can.</p>
+  </div>
+
+  <footer>
+    <span>&copy; 2026 Ayush Pathak</span>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
